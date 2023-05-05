@@ -32,9 +32,23 @@ pygame.quit()
 
 # pygame.mixer.music.play(): Esta linha inicia a reprodução da música carregada anteriormente. A função "play()" da classe "pygame.mixer.music" é usada para começar a tocar a música.
 
-# while pygame.mixer.music.get_busy():: Esta linha cria um loop que espera a música terminar de tocar. A função "get_busy()" da classe "pygame.mixer.music" retorna True enquanto a música está tocando, então o loop continua até que essa função retorne False.
+# while pygame.mixer.music.get_busy(): Esta linha cria um loop que espera a música terminar de tocar. A função "get_busy()" da classe "pygame.mixer.music" retorna True enquanto a música está tocando, então o loop continua até que essa função retorne False.
+                                        # Essa linha cria um loop que espera a música terminar de tocar. O while é um comando em Python que permite 
+                                            # que um bloco de código seja repetido enquanto uma condição for verdadeira. Nesse caso, a condição é 
+                                            # pygame.mixer.music.get_busy(), que verifica se a música ainda está tocando.
+                                        # Enquanto a música estiver sendo reproduzida, a função get_busy() retornará True, o que manterá o loop ativo.
+                                            #  Quando a música terminar de tocar, a função get_busy() retornará False, 
+                                            # encerrando o loop e continuando a execução do programa.
 
-# pygame.time.Clock().tick(10): Esta linha pausa o loop por 10 milissegundos a cada iteração, evitando que o loop use muita CPU. A função "pygame.time.Clock().tick()" é usada para definir a taxa de quadros do jogo.
+# pygame.time.Clock().tick(10): Essa linha de código define a velocidade de atualização da tela e controla a taxa de quadros do jogo. 
+                                # Esta linha pausa o loop por 10 milissegundos a cada iteração, evitando que o loop use muita CPU. A função "pygame.time.Clock().tick()" é usada para definir a taxa de quadros do jogo.
+                                # O pygame.time.Clock() cria um objeto que pode ser usado para controlar o tempo em seu jogo, enquanto o método 
+                                    # .tick(10) especifica a taxa de atualização da tela em quadros por segundo (FPS). Nesse caso, a taxa de 
+                                    # quadros é definida como 10, o que significa que a tela será atualizada 10 vezes por segundo.
+                                # Essa linha de código é importante para evitar que o jogo execute muito rapidamente ou muito devagar. Se o 
+                                    # jogo for executado muito rapidamente, ele pode ser difícil de jogar ou até mesmo causar problemas de 
+                                    # desempenho no computador. Se o jogo for executado muito devagar, a jogabilidade pode ser afetada negativamente.
+
 
 # pygame.quit(): Esta linha encerra a biblioteca Pygame, liberando recursos do sistema. É importante chamar essa função no final do seu programa.
 
