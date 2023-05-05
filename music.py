@@ -15,3 +15,15 @@ while pygame.mixer.music.get_busy():
 
 # Encerra o pygame
 pygame.quit()
+
+# Explicação linha por linha:
+
+# import pygame: Esta linha importa a biblioteca Pygame, que é uma biblioteca de jogos em Python que também pode ser usada para trabalhar com áudio e vídeo.
+
+# 
+
+
+
+
+
+
